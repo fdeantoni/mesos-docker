@@ -1,0 +1,12 @@
+# IntelliJ Stuff
+.idea
+*.iml
+
+# VIM Swap file
+*.swp
+
+# Log files
+*.log
+
+# Apple OSX Stuff
+.DS_Store

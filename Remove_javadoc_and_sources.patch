@@ -1,0 +1,46 @@
+Index: src/java/mesos.pom.in
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/java/mesos.pom.in	(date 1558045054000)
++++ src/java/mesos.pom.in	(date 1558053066000)
+@@ -80,38 +80,6 @@
+           <skip>true</skip>
+         </configuration>
+       </plugin>
+-      <!-- Build and attach javadoc -->
+-      <plugin>
+-        <artifactId>maven-javadoc-plugin</artifactId>
+-        <configuration>
+-          <sourcepath>@abs_top_srcdir@/src/java/src:@abs_top_builddir@/src/java/generated</sourcepath>
+-          <subpackages>org.apache.mesos</subpackages>
+-        </configuration>
+-        <executions>
+-          <execution>
+-            <id>build-and-attach-javadocs</id>
+-            <phase>package</phase>
+-            <goals>
+-              <goal>jar</goal>
+-            </goals>
+-          </execution>
+-        </executions>
+-      </plugin>
+-      <!-- Package up the Java source -->
+-      <plugin>
+-        <artifactId>maven-source-plugin</artifactId>
+-        <configuration>
+-          <excludeResources>true</excludeResources>
+-        </configuration>
+-        <executions>
+-          <execution>
+-            <id>attach-sources</id>
+-            <goals>
+-              <goal>jar</goal>
+-            </goals>
+-          </execution>
+-        </executions>
+-      </plugin>
+       <!-- We want to sign the artifact, the POM, and all attached artifacts -->
+       <plugin>
+         <artifactId>maven-gpg-plugin</artifactId>
