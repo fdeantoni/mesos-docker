@@ -50,7 +50,7 @@ RUN  tar -xvf ${MESOS_PACKAGE} && \
        --disable-werror \
        --prefix=/opt/mesos && \
      mkdir -p /opt/mesos && \
-     make -j 4 V=1 && \
+     make -j 1 V=1 && \
      make install && \
      mkdir -p /opt/mesos/java && \
      cp src/java/target/mesos-*.jar /opt/mesos/java

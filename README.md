@@ -5,7 +5,7 @@ A mesos docker image to run mesos master with mesos agent package
 
 Create the docker image:
 
-	$ sudo docker build -t jdoe/mesos:1.8.1 .
+	$ sudo docker build -t fdeantoni/mesos:1.8.1 .
 	
 Push the docker image to the registry:
 
